@@ -31,7 +31,8 @@
         {% if page.image %}
             <img src="{{ page.image }}" class="header-image" />
         {% endif %}
-        {% if nobar != "true" %}
+        {% if nobar %}
+        {% else %}
             <hr />
         {% endif %}
         <div class="section">
