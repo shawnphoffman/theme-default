@@ -28,8 +28,8 @@
 <div class="page">
     {% block page %}
         <h1 class="book-chapter book-chapter-{{ page.depth }}">{{ page.title }}</h1>
-        {% if image %}
-            <img src="{{ image }}" class="header-image" />
+        {% if book.image %}
+            <img src="{{ book.image }}" class="header-image" />
         {% endif %}
         <hr />
         <div class="section">
