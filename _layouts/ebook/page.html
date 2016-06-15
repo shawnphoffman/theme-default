@@ -31,7 +31,9 @@
         {% if page.image %}
             <img src="{{ page.image }}" class="header-image" />
         {% endif %}
-        <hr />
+        {% if nobar != "true" %}
+            <hr />
+        {% endif %}
         <div class="section">
             {{ page.content|safe }}
         </div>
