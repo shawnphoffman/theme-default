@@ -27,7 +27,7 @@
 {% block body %}
 <div class="page">
     {% block page %}
-        {% if page.includesTitle !== null %}
+        {% if not page.notitle %}
             <h1 class="book-chapter book-chapter-{{ page.depth }}">{{ page.title }}</h1>
         {% endif %}
         {% if page.image %}
