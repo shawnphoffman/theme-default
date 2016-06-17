@@ -27,9 +27,7 @@
 {% block body %}
 <div class="page">
     {% block page %}
-        {% if page.head %}
-            <h1 class="book-chapter book-chapter-{{ page.depth }}">{{ page.head }}</h1>
-        {% else %}
+        {% if page.includesTitle !== null %}
             <h1 class="book-chapter book-chapter-{{ page.depth }}">{{ page.title }}</h1>
         {% endif %}
         {% if page.image %}
