@@ -16,7 +16,7 @@
                     <span>{{ article.title }}</span>
                 {% endif %}
                 {% if 1 %}
-                <span class="page">{{ article.level }}</span>
+                <!--<span class="page">{{ article.level }}</span>-->
                 {% endif %}
             </span>
             {% if article.articles.length > 0 %}
@@ -31,7 +31,7 @@
 {% block page %}
 <div class="section toc">
     <h1>{{ "SUMMARY"|t }}</h1>
-    <ol>
+    <ul>
         {% for part in summary.parts %}
             {% if part.title %}
             <li class="part-title">
@@ -52,7 +52,7 @@
             </span>
         </li>
         {% endif %}
-    </ol>
+    </ul>
 </div>
 {% endblock %}
 
